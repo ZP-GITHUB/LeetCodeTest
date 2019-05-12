@@ -4,6 +4,7 @@ import static com.zp.SortRiew.BubbleSort.bubbleSort;
 import static com.zp.SortRiew.InsertSort.insertSort;
 import static com.zp.SortRiew.QuickSort.quick;
 import static com.zp.SortRiew.SelectSort.selectSort;
+import static com.zp.SortRiew.ShellSort.shellSort;
 
 /**
  * Created by ZP on 2019/5/3.
@@ -34,6 +35,11 @@ public class SortTest {
         insertSort(insertSortnumbers);
         System.out.print("插入排序后：");
         printArr(insertSortnumbers);
+
+        int[] shellSortnumbers = {10,20,15,0,6,7,2,1,-5,55};
+        shellSort(shellSortnumbers);
+        System.out.print("希尔排序后：");
+        printArr(shellSortnumbers);
     }
 
     /**
